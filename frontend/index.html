@@ -4,57 +4,81 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRUD TIENDA CAPAS + PHP😎</title>
+    <title>😩 CRUD Productos + Capas + Php 😩</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">CRUD Productos🧴</h1>
-        <div class="my-3" id="alertContainer"></div>
+        <h1 class="text-center">CRUD Productos</h1>
+        <div id="alertContainer" class="my-3"></div>
 
         <div class="row">
             <div class="col-5">
                 <div class="card mb-4">
-                    <div class="card-header">Agregar / Modificar Productos🛒</div>
+                    <div class="card-header">
+                        Agregar / Modificar Productos
+                    </div>
                     <div class="card-body">
-                        <form id="producForm">
+                        <form id="productForm">
                             <input type="hidden" id="productId">
                             <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre del Producto</label>
+                                <label for="nombre" class="form-label">
+                                    Nombre del Producto
+                                </label>
                                 <input type="text" class="form-control" id="nombre" required>
-                                <label for="descripcion" class="form-label">Descripción del Producto</label>
-                                <textarea type="text" class="form-control" id="descripcion" required
-                                    rows="5"></textarea>
-                                <label for="tipo" class="form-label">tipo del Producto</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">
+                                    Descripcion del Producto
+                                </label>
+                                <textarea type="text" class="form-control" id="descripcion" rows="5" required>
+                  </textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipo" class="form-label">
+                                    Tipo del Producto
+                                </label>
                                 <input type="text" class="form-control" id="tipo" required>
-                                <label for="precio" class="form-label">Precio del Producto</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="precio" class="form-label">
+                                    Precio del Producto
+                                </label>
                                 <input type="number" class="form-control" id="precio" required>
-                                <label for="imagen" class="form-label">Imagen URL</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">
+                                    Imagen URL
+                                </label>
                                 <input type="text" class="form-control" id="imagen" required>
                             </div>
-                            <button class="btn btn-primary" type="submit" id="submitBtn">Agregar Producto✔</button>
+                            <button type="submit" id="submitBtn" class="btn btn-primary">
+                                Agregar Producto
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-7">
                 <div class="card">
-                    <div class="card-header">Productos en el Sistema💻</div>
+                    <div class="card-header">
+                        Productos en el Sistema
+                    </div>
                     <div class="card-body">
                         <table class="table table-striped">
                             <thead class="table-success">
                                 <tr>
                                     <th>Id</th>
                                     <th>Nombre</th>
-                                    <th>Descripción</th>
+                                    <th>Descripcion</th>
                                     <th>Tipo</th>
                                     <th>Precio</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
-                            <tbody id="'productTableBody"></tbody>
+                            <tbody id="productTableBody"></tbody>
                         </table>
                     </div>
                 </div>
@@ -62,7 +86,7 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
